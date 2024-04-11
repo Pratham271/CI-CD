@@ -26,7 +26,7 @@ const page = async() => {
       userId: Number(session?.user?.id)
     }
   })
-  const data = balanceHistory.map(b => ({
+  const data = balanceHistory.map((b:any) => ({
     date: b.timeStamp.toLocaleDateString(),
     amount: b.amount/100
   }))
