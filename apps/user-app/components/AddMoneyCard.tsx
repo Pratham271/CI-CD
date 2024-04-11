@@ -37,7 +37,7 @@ const AddMoneyCard = () => {
                 key: x.name,
                 value: x.name
             }))}/>
-            <div className="flex justify-center pt-3">
+            <div className="flex justify-center pt-4">
                 <Button onClick={async()=> {
                     await createOnRampTransaction(Number(amount)*100,provider || "")
                     window.location.href = redirectUrl || ""
