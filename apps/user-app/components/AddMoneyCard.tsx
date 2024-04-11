@@ -26,7 +26,7 @@ const AddMoneyCard = () => {
     <Card title='Add Money'>
         <div className='w-full'>
             <TextInput label={"Amount"} placeholder={"Amount"} onChange={(e)=> setAmount(e.target.value)}/>
-            <div className="py-4 text-left">
+            <div className="py-3 text-left">
                 Bank
             </div>
             <Select onSelect={(value)=> {
