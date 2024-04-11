@@ -26,7 +26,7 @@ async function getP2pTransactions(){
       toUser:true
     }
   })
-  return txns.map(t => ({
+  return txns.map((t:any) => ({
     amount: t.amount,
     time: t.timeStamp,
     to: t.toUser.name,
